@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 30px;
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    display: flex;               /* Use flexbox for centering */
+    justify-content: center;     /* Center horizontally */
+    height: 100vh;              /* Full height of the viewport */
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 0.2rem;                /* Reduced gap between columns */
+    width: 50vmin;              /* Set a width for the grid */
+}
+
+
+.box {
+    height: 15vmin; /* Adjusted height */
+    width: 15vmin;  /* Adjusted width */
+    border-radius: 0.5rem; /* Slightly smaller border radius */
+    border: none;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3); /* Reduced shadow */
+    font-size: 10vmin; /* Adjusted font size */
+    color: #b0413e;
+    background-color: #ffffc7;
+}
+
+
+button {
+    padding: 0.5rem; /* Adjust padding */
+    font-size: 1rem; /* Adjust font size */
+    background-color: #191913;
+    color: #fff;
+    border-radius: 0.5rem; /* Adjust border radius */
+    border: none;
+    margin-top: 1rem; /* Add some space above the button */
+}
+
+.status {
+    color: #ffffc7;
+    font-size: 5vmin;
+    margin-bottom: 20px;
+}
